@@ -8,7 +8,7 @@ ENV INST_PATH /etc
 
 WORKDIR $INST_PATH
 
-RUN wget https://sonarsource.bintray.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-$SONAR_SCANNER_VER.zip \
+RUN wget https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-$SONAR_SCANNER_VER.zip \
     && unzip sonar-scanner-cli-$SONAR_SCANNER_VER.zip \
     && rm sonar-scanner-cli-$SONAR_SCANNER_VER.zip
 
