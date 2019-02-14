@@ -18,7 +18,7 @@ ENV PATH $PATH:$INST_PATH/sonar-scanner-$SONAR_SCANNER_VER/bin
 
 WORKDIR /
 
-RUN apt-get install python3.6 \
+RUN apt-get install python3.5 \
     && curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py \
     && python get-pip.py \
     && pip install pylint
